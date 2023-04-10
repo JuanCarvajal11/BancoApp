@@ -16,9 +16,9 @@
         </header>
     <div>
         <form action="db/Transaction/procesarTransaction.php" method="post" class="w-[380px] h-[400px] rounded-[10px] text-white/100 flex flex-col items-center">
-            <input type="number" name="cuenta1" id="InputName" placeholder="Numero de cuenta de envio" class="w-[300px] h-[40px] text-black rounded-lg"><br>
-            <input type="password" name="contra" id="InputName" placeholder="Contraseña" class="w-[300px] h-[40px] text-black rounded-lg"><br>
-            <input type="number" name="cuenta2" id="InputName" placeholder="Numero de cuenta recibe" class="w-[300px] h-[40px] text-black rounded-lg"><br>
+            <input type="number" name="cuenta1" maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="InputName" placeholder="Numero de cuenta de envio" class="w-[300px] h-[40px] text-black rounded-lg"><br>
+            <input type="password" name="contra" maxlength="4" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="InputName" placeholder="Contraseña" class="w-[300px] h-[40px] text-black rounded-lg"><br>
+            <input type="number" name="cuenta2" maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="InputName" placeholder="Numero de cuenta recibe" class="w-[300px] h-[40px] text-black rounded-lg"><br>
             <input type="number" name="valor" id="InputLastname" placeholder="Monto a enviar" class="w-[300px] h-[40px] text-black rounded-lg"><br>
             
             <br>
