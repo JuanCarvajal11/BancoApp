@@ -12,8 +12,7 @@
     function redireccionar() {
         setTimeout("window.location='../index.php';", 3000);
     }
-
-
+    
 </script>
 <?php
 

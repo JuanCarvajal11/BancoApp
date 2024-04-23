@@ -17,10 +17,10 @@
     <div>
         <form action="db/EjecutarUser.php" method="post" class="w-[380px] h-[400px] rounded-[10px] text-white/100 flex flex-col items-center">
 
-            <input type="text" name="name" id="InputName" placeholder="First Name" class="w-[300px] h-[40px] text-black rounded-lg"><br>
-            <input type="text" name="lastname" id="InputLastname" placeholder="Last Name" class="w-[300px] h-[40px] text-black rounded-lg"><br>
-            <input type="number" maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  name="nrocuenta" id="InputNrocuenta" placeholder="Account Number" class="w-[300px] h-[40px] text-black rounded-lg"><br>
-            <input type="password" name="pss" id="InputPassword" placeholder="Password(Only Numbers)" maxlength="4" class="w-[300px] h-[40px] text-black rounded-lg" maxlength="4" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" ><br>
+            <input type="text" name="name" id="InputName" placeholder="First Name" class="w-[300px] h-[40px] text-black rounded-lg" autocomplete="off"><br>
+            <input type="text" name="lastname" id="InputLastname" placeholder="Last Name" class="w-[300px] h-[40px] text-black rounded-lg" autocomplete="off"><br>
+            <input type="number" maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  name="nrocuenta" id="InputNrocuenta" placeholder="Account Number" class="w-[300px] h-[40px] text-black rounded-lg" autocomplete="off"><br>
+            <input type="number" name="pss" id="InputPassword" placeholder="Password(Only Numbers)" maxlength="4" class="w-[300px] h-[40px] text-black rounded-lg" maxlength="4" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" autocomplete="off" ><br>
             <br>
             <input type="submit" name="submit" class="bg-gray-600 w-[300px] h-[50px] font-ldbo text-center" value="Create"></input><br>
         </form>
